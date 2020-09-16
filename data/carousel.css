@@ -4,7 +4,7 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: #000;
 }
 
 
@@ -95,7 +95,8 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+	/* nav bar가 카테고리 제목을 가리는 문제를 해결한 후 (custom.css) 추가 공백 제거
+	/*margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */

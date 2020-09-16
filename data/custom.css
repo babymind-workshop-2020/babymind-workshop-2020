@@ -1,0 +1,5 @@
+.nav-custom {
+	/* nav bar가 카테고리 제목을 가리는 문제를 해결하기 위함*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
