@@ -1,6 +1,8 @@
-body,
+body {
+  padding-top: 50px;
+}
+
 .nav-custom {
-	/* nav bar가 카테고리 제목을 가리는 문제를 해결하기 위함*/
 	padding-top: 40px;
 }
 
@@ -20,5 +22,25 @@ body,
     padding-right: 35px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .carousel-caption {
+    right: 10%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .carousel-caption {
+    right: 5%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .carousel-caption {
+    bottom: 10px;
   }
 }
