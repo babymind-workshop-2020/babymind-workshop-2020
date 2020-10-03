@@ -1,458 +1,454 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BabyMind@NeurIPS2020-proposed">
+  <meta name="author" content="thkim@bi.snu.ac.kr">
+  <meta property="og:image" content="./assets/images/babymind_logo_6.png">
+  <link rel="icon" href="./assets/images/babymind_logo_6.png">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="BabyMind@NeurIPS2020-proposed">
-    <meta name="author" content="thkim@bi.snu.ac.kr">
-    <meta property="og:image" content="./assets/images/babymind_logo_6.png">
-    <link rel="icon" href="./assets/images/babymind_logo_6.png">
+  <title>NeurIPS 2020 Workshop on BabyMind</title>
 
-    <title>NeurIPS 2020 Workshop on BabyMind</title>
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/carousel.css" rel="stylesheet">
+  <link href="./assets/css/custom.css" rel="stylesheet">
+</head>
 
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/css/carousel.css" rel="stylesheet">
-	 <link href="./assets/css/custom.css" rel="stylesheet">
-  </head>
+<body>
+  <div class="navbar-wrapper">
+    <div class="container">
 
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="babymind-workshop-2020.github.io/index.html">BabyMind</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="https://babymind-workshop-2020.github.io">Home</a></li>
-                <li><a href="https://babymind-workshop-2020.github.io/#cfp">Call for Papers</a></li>
-				<li><a href="https://babymind-workshop-2020.github.io/#dates">Important Dates</a></li>
-				<li><a href="https://babymind-workshop-2020.github.io/#schedule">Schedule</a></li>
-				<li><a href="https://babymind-workshop-2020.github.io/#invited">Invited Speakers</a></li>
-				<li><a href="https://babymind-workshop-2020.github.io/#organizers">Organizers</a></li>
-		      		<li><a href="https://babymind-workshop-2020.github.io/#contacts">Contacts</a></li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="babymind-workshop-2020.github.io/index.html">BabyMind</a>
           </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="./assets/images/main.png" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-		    <h1><b>NeurIPS 2020 Workshop on BabyMind</b><br><small>How Babies Learn and How Machines Can Imitate</small></h1>
-              <p> Online, NeurIPS 2020 <br>
-	      	 Dec, 11th, 2020, Canada</p>
-              <p>
-			<img src="./assets/images/logo_2.png" width="120" />
-		      
-			<a class="btn btn-default" href="https://nips.cc/">
-			<img src="./assets/images/neurips-logo-new.svg" width="120" />
-			</a>
-	      </p>
-            </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="https://babymind-workshop-2020.github.io">Home</a></li>
+              <li><a href="https://babymind-workshop-2020.github.io/#cfp">Call for Papers</a></li>
+              <li><a href="https://babymind-workshop-2020.github.io/#dates">Important Dates</a></li>
+              <li><a href="https://babymind-workshop-2020.github.io/#schedule">Schedule</a></li>
+              <li><a href="https://babymind-workshop-2020.github.io/#invited">Invited Speakers</a></li>
+              <li><a href="https://babymind-workshop-2020.github.io/#organizers">Organizers</a></li>
+              <li><a href="https://babymind-workshop-2020.github.io/#contacts">Contacts</a></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+
     </div>
-
-
-    <div class="container marketing">
-      <div class="row featurette">
-		  <div class="col-md-12">
-			  <h1> BabyMind Workshop 2020 </h1>
-			  
-			  <p>
-			  Deep neural network models have shown remarkable performance in tasks such as visual object recognition, speech recognition, and autonomous robot control.
-			  We have seen continuous improvements throughout the years which have led to these models surpassing human performance in a variety of tasks such as image classification, video games, and board games.
-			  However, the performance of deep learning models heavily relies on a massive amount of data, which requires huge time and effort to collect and label them.
-			  </p>
-			  
-			  <p>
-		          Recently, to overcome these weaknesses and limitations, attention has shifted towards machine learning paradigms such as semi-supervised learning, incremental learning, and meta-learning which aim to be more data-efficient.
-			  However, these learning models still require a huge amount of data to achieve high performance on real-world problems.
-			  There has been only a few achievement or breakthrough, especially in terms of the ability to grasp abstract concepts and to generalize problems.
-			  </p>  
-			
-			  <p>
-		          In contrast, human babies gradually make sense of the environment through their experiences, a process known as learning by doing, without a large amount of labeled data.
-			  They actively engage with their surroundings and explore the world through their own interactions.
-			  They gradually acquire the abstract concept of objects and develop the ability to generalize problems.
-			  Thus, if we understand how a baby's mind develops, we can imitate those learning processes in machines and thereby solve previously unsolved problems such as domain generalization and overcoming the stability-plasticity dilemma.
-			  In this workshop, we explore how these learning mechanisms can help us build human-level intelligence in machines.
-			  </p>
-			  
-			  <p>
-			  In this interdisciplinary workshop, we bring together eminent researchers in Computer Science, Cognitive Science, Psychology, Brain Science, Developmental Robotics and various other related fields to discuss the below questions on babies vs. machines.
-			  </p>
-			  <ul>
-				  <li>How far is the state-of-the-art machine intelligence from babies?</li>
-				  <li>How does a baby learn from their own interactions and experiences?</li>
-				  <li>What sort of insights can we acquire from the baby's mind?</li>
-				  <li>How can those insights help us build smart machines with baby-like intelligence?</li>
-				  <li>How can machines learn from babies to do better?</li>
-				  <li>How can these machines further contribute to solving the real-world problems?</li>
-			  </ul>
-			  
-			  <p>
-			  <!--Our workshop will have invited talks, a poster session, and an open panel discussion to exchange ideas.-->
-			  We will invite selected experts in the related fields to give insightful talks.	
-			  We will also encourage interdisciplinary contributions from researchers in the above topics.
-			  Hence, we expect this workshop to be a good starting point for participants in various fields to discuss theoretical fundamentals, open problems, and major directions of further development in an exciting new area.
-			  </p>
-			  
-			<div class="col-md-12 nav-custom" id="cfp">
-				<h2> Call for Papers </h2>
-					<p>
-					This workshop will invite researchers in the related fields for poster session in the following topics.
-					Topics of interest include but are not limited to:
-					</p>
-					
-					<ul>
-						<li>Neuro-cognitive learning systems</li>
-						<li>Incremental / continual / life-long / never-ending learning</li>
-						<li>Curiosity-driven self-supervised learning</li>
-						<li>Active learning based on a perception-cognition-action cycle</li>
-						<li>Embodied concept learning from real-world interactions</li>
-						<li>Object-centric representation and concept learning</li>
-						<li>Cross-modal / multi-modal concept learning</li>
-						<li>Developmental / cognitive robotics</li>
-						<li>Social and emotional development systems</li>
-						<li>Language development systems</li>
-					</ul>
-			</div>
-
-		 <h3> Submission Instructions </h3>
-		 
-		 <p>We invite submissions of papers as extended abstracts within 4 pages</b>, excluding references or supplementary materials. All submissions must be in pdf format as a single file (incl. supplementary materials) using the template below and submitted through below CMT link. The review process is single-round and double-blind. All submissions have to be anonymized. 
-		 </p>
-		 
-		 <ul>
-			<li> CMT link: <a href="https://cmt3.research.microsoft.com/babymind2020">Conference Management Toolkit</a>
-			<li> LaTeX/Word Templates: <a href="https://neurips.cc/Conferences/2020/PaperInformation/StyleFiles">NeurIPS 2020 LaTeX style file</a>
-		 </ul>
-		 
-		 <p>
-		 All accepted papers will be presented as posters during the workshop and listed on the website. Additionally, a small number of accepted papers will be selected to be presented as contributed talks.
-		 </p>
-		 
-		 <h3> Dual Submissions </h3>
-		 <p>
-		 Note that this workshop will not be part of the official proceedings. Accepted submissions will not be counted as publications. However, we discourage submissions of relevant work that has been previously published, or is to be presented at the main conference.
-		 </p>
-		 
-		  </div>
-		</div>
-
-		<div class="row featurette">
-			<div class="col-md-12 nav-custom" id="dates">
-			<h2> Important Dates </h2>
-			<table class="table table-striped">
-			  <tbody>
-				<tbody>
-				<tr>	
-				  <th scope="row">Paper Submission Deadline</th>
-				  <td>October 9, 2020 &nbsp;&nbsp;<!--button type="button" class="btn btn-danger">Extended</button-->
-				</tr>
-				<tr>	
-				  <th scope="row">Notification to Authors</th>
-				  <td>October 23, 2020</td>
-				</tr>
-				<tr>	
-				  <th scope="row">Paper Camera-Ready Deadline</th>
-				  <td>October 30, 2020</td>
-				</tr>
-				<tr>	
-				  <th scope="row">Workshop Date</th>
-				  <td>December 11, 2020</td>
-				</tr>
-			  </tbody>
-			</table>
-			</div>
-		</div>
-
-
-		<div class="row featurette">
-			<div class="col-md-12 nav-custom" id="schedule">
-			<h2> Schedule <!--<h4>Chair: </h4>--> </h2>
-			<table class="table table-striped">
-			  <thead>
-				<tr>
-				  <th scope="col">Time</th>
-				  <th scope="col">Presentation</th>
-				  <!--<th scope="col">Presenter</th>-->
-				</tr>
-			  </thead>
-			  <tbody>
-				<tr>	
-				  <th scope="row">08:40 - 09:00</th>
-				  <td>Opening Remarks: <b>BabyMind</b>, 
-				  <a href="https://bi.snu.ac.kr/~btzhang/">Byoung-Tak Zhang</a> (Seoul National University) and <a href="http://garymarcus.com/index.html">Gary Marcus</a> (Robust AI) </td>
-				</tr>
-				<tr>
-				  <th scope="row">09:00 - 09:40</th>
-				  <td><b></b>
-				  <a href="https://psychology.berkeley.edu/people/celeste-kidd">Celeste Kidd</a> (University of California, Berkeley)</td>
-				</tr>
-				<tr>
-				  <th scope="row">09:40 - 10:20</th>
-				  <td><b></b>
-				  <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/">Oliver Brock</a> (Technical University of Berlin)</td>
-				</tr>
-				<tr>
-				  <th scope="row">10:20 - 10:45</th>
-				  <td>Coffee break &amp; Discussions</td>
-				</tr>
-				<tr>
-				  <th scope="row">10:45 - 11:30</th>
-				  <td>Contributed Talks 1 (3) (15 minutes each) <br>
-				  <!--(1) <b> </b> <br>
-				  (2) <b> </b> <br>
-				  (3) <b> </b> </td>-->
-				</tr>
-				<tr>
-				  <th scope="row">11:30 - 12:30</th>
-					<td><b>Poster Session</b></td>
-				  <!--<td>Speaker</td>-->
-				</tr>
-				<tr>
-				  <th scope="row">12:30 - 13:30</th>
-				  <td>Lunch Break</td>
-				</tr>
-				<tr>
-				  <th scope="row">13:30 - 15:00</th>
-				  <td>Contributed Talks 2 (6) (15 minutes each) <br>
-				  <!--(1) <b> </b> <br>
-				  (2) <b> </b> <br>
-				  (3) <b> </b> <br>
-				  (4) <b> </b> <br>
-				  (5) <b> </b> <br>
-				  (6) <b> </b> </td>-->
-				</tr>
-				<tr>
-				  <th scope="row">15:00 - 15:30</th>
-				  <td>Coffee Break &amp; Poster Session</td>
-				  <!--<td>Speaker</td>-->
-				</tr>
-				<tr>
-				  <th scope="row">15:30 - 16:10</th>
-				  <td><b></b> 
-				  <a href="https://profiles.stanford.edu/fei-fei-li">Fei-Fei Li</a> (Stanford  University) (TBC) </td>
-				  
-				</tr>
-				<tr>
-				  <th scope="row">16:10 - 16:50</th>
-				  <td><b></b>
-				  <a href="http://web.mit.edu/cocosci/josh.html">Josh Tenenbaum</a> (Massachusetts Institute of Technology)</td>
-				</tr>
-				<tr>
-				  <th scope="row">15:50 - 17:30</th>
-				  <td><b>Pannel discussions</b>, All invited speakers</td>
-				</tr>
-				<tr>
-				  <th scope="row">17:30 - 17:40</th>
-				  <td>Closing</td>
-				  <!--<td>Organizer</td>-->
-				</tr>
-			  </tbody>
-			</table>
-			</div>
-		</div>
-		
-		<hr class="featurette-divider">
-  
-		<div class="row featurette">
-			<div class="col-md-12 nav-custom" id="invited">
-			<h2> Invited Speakers </h2>
-			
-			<!-- title, abs 정해지면 주석과 같이 형식 바꿈 -->
-			<!--<div>
-				<div style="150px; height=150px; float:left;">
-					<img class="img-circle" src="./assets/images/kidd.jpg" alt="Generic placeholder image" width="160" height="160">
-				</div>
-				<div style="padding-left: 150px;">
-					<font size="4"><a href="">Celeste Kidd</a>, University of California, Berkeley</font><br>
-					<font size="3"><b>Title: </b></font><br>
-					<b>Abstract: </b>
-				</div>
-			</div>
-			<div style="padding-top: 100px;">	
-				<div style="150px; height=150px; float:left;">
-					<img class="img-circle" src="./assets/images/brock.jpg" alt="Generic placeholder image" width="160" height="160">
-				</div>
-				<div style="padding-left: 150px;">
-					<font size="4"><a href="">Oliver Brock</a>, Technical University of Berlin</font><br>
-					<font size="3"><b>Title: </b></font><br>
-					<b>Abstract: </b>
-				</div>
-			</div>
-			<div style="padding-top: 100px;">	
-				<div style="150px; height=150px; float:left;">
-					<img class="img-circle" src="./assets/images/li.jpg" alt="Generic placeholder image" width="160" height="160">
-				</div>
-				<div style="padding-left: 150px;">
-					<font size="4"><a href="">Fei-Fei Li</a>, Stanford University (TBC)</font><br>
-					<font size="3"><b>Title: </b></font><br>
-					<b>Abstract: </b>
-				</div>
-			</div>
-			<div style="padding-top: 100px;">	
-				<div style="150px; height=150px; float:left;">
-					<img class="img-circle" src="./assets/images/tenenbaum.jpg" alt="Generic placeholder image" width="160" height="160">
-				</div>
-				<div style="padding-left: 150px;">
-					<font size="4"><a href="">Josh Tenenbaum</a>, Massachusetts Institute of Technology</font><br>
-					<font size="3"><b>Title: </b></font><br>
-					<b>Abstract: </b>
-				</div>
-			</div>-->
-			<br>
-			<p><ul>
-				<div class="col-lg-4">
-					<img class="img-circle" src="./assets/images/kidd.jpg" alt="Generic placeholder image" width="160" height="160">
-					<h5><a href="https://psychology.berkeley.edu/people/celeste-kidd">Celeste Kidd<br>University of California, Berkeley</h5></a>
-				</div>
-				<div class="col-lg-4">
-					<img class="img-circle" src="./assets/images/brock.jpg" alt="Generic placeholder image" width="160" height="160">
-					<h5><a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/">Oliver Brock<br>Technical University of Berlin</h5></a>
-				</div>
-				<div class="col-lg-4">
-					<img class="img-circle" src="./assets/images/li.jpg" alt="Generic placeholder image" width="160" height="160">
-					<h5><a href="https://profiles.stanford.edu/fei-fei-li">Fei-Fei Li<br>Stanford University (TBC)</h5></a>
-				</div>
-				<div class="col-lg-4">
-					<img class="img-circle" src="./assets/images/tenenbaum.jpg" alt="Generic placeholder image" width="160" height="160">
-					<h5><a href="http://web.mit.edu/cocosci/josh.html">Josh Tenenbaum<br>Massachusetts Institute of Technology</h5></a>
-				</div>
-			</ul></p>
-			
-			</div>
-		</div>
-	    
-		<hr class="featurette-divider">
-		
-		<div class="row featurette">
-			<div class="col-md-12 nav-custom" id="papers">
-			<h2> Accepted Papers </h2>
-			<b> <br>
-			
-			</div>
-		</div>				  
-	  
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-		<div class="col-md-12 nav-custom" id="organizers">
-		<h2> Organizing Committee </h2>
-			<br>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/btzhang.png" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://cse.snu.ac.kr/professor/%EC%9E%A5%EB%B3%91%ED%83%81">Byoung-Tak Zhang (Co-chair)<br>Seoul National University</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/marcus.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="http://garymarcus.com/index.html">Gary Marcus (Co-chair)<br>Robust AI</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/cangelosi.png" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://www.research.manchester.ac.uk/portal/angelo.cangelosi.html">Angelo Cangelosi<br>University of Manchester</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/knoeferle.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://amor.cms.hu-berlin.de/~knoeferp/index.html">Pia Knoeferle<br>Humboldt University of Berlin</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/obermayer.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://www.ni.tu-berlin.de/menue/members/head_of_research_group/obermayer_klaus/">Klaus Obermayer<br>Technical University of Berlin</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/vernon.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="http://www.vernon.eu/">David Vernon<br>Carnegie Mellon University</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/yu.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://psych.indiana.edu/directory/faculty/yu-chen.html">Chen Yu<br>Indiana University</h5></a>
-			</div>
-      </div>
-	</div>	
-
-	<hr class="featurette-divider">
-	<div class="col-md-12 nav-custom" id="committee">
-
-		<h2> Program Committee </h2>
-		<br>
-		<p><ul>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/cottrell.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://cseweb.ucsd.edu/~gary/">Gary Cottrell<br>University of California San Diego (TBC)</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/forbus.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/forbus-ken.html">Ken Forbus<br>Northwestern University</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/langley.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://scholar.google.co.kr/citations?user=5JcRw-sAAAAJ&hl=ko">Pat Langley<br>Stanford University (TBC)</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/ritter.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="http://www.isle.org/~langley/">Helge Ritter<br>University of Bielefeld</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/thkim2.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://bi.snu.ac.kr/~thkim/">Taehyeong Kim<br>Seoul National University</h5></a>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="./assets/images/punithan.jpg" alt="Generic placeholder image" width="160" height="160">
-				<h5><a href="https://sites.google.com/site/dharanipunithan/">Dharani Punithan<br>Seoul National University</h5></a>
-			</div>
-			<!--<li>Inah Lee, Seoul National University</li>-->
-		</ul></p>
   </div>
-  <hr class="featurette-divider">
-	<div class="col-md-12 nav-custom" id="contacts">
 
-		<h2> Contact us </h2>
-		<p>
-		For more questions about the workshop and submissions, please email <a href="mailto:babymind.workshop@gmail.com">babymind.workshop@gmail.com</a>
-		</p>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="first-slide" src="./assets/images/main.png" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1><b>NeurIPS 2020 Workshop on BabyMind</b><br><small>How Babies Learn and How Machines Can Imitate</small></h1>
+            <p>Online, NeurIPS 2020 <br> Dec, 11th, 2020, Canada</p>
+            <p>
+              <img src="./assets/images/logo_2.png" width="120">
+              <a class="btn btn-default" href="https://nips.cc/">
+                <img src="./assets/images/neurips-logo-new.svg" width="120">
+              </a>
+            </p>
+          </div>
         </div>
-	    
-  <hr class="featurette-divider">
-      <footer>
-        <p class="pull-right"><a href="https://babymind-workshop-2020.github.io/index.html">Back to top</a></p>
-        <p>© 2020 <a href="mailto:ijhwang@bi.snu.ac.kr">Injune Hwang</a>, Biointelligence Lab @ Seoul National University </p>
-      </footer>
+      </div>
+    </div>
+  </div>
 
+
+  <div class="container marketing">
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h1>BabyMind Workshop 2020</h1>
+
+        <p>
+          Deep neural network models have shown remarkable performance in tasks such as visual object recognition, speech recognition, and autonomous robot control.
+          We have seen continuous improvements throughout the years which have led to these models surpassing human performance in a variety of tasks such as image classification, video games, and board games.
+          However, the performance of deep learning models heavily relies on a massive amount of data, which requires huge time and effort to collect and label them.
+        </p>
+
+        <p>
+          Recently, to overcome these weaknesses and limitations, attention has shifted towards machine learning paradigms such as semi-supervised learning, incremental learning, and meta-learning which aim to be more data-efficient.
+          However, these learning models still require a huge amount of data to achieve high performance on real-world problems.
+          There has been only a few achievement or breakthrough, especially in terms of the ability to grasp abstract concepts and to generalize problems.
+        </p>
+
+        <p>
+          In contrast, human babies gradually make sense of the environment through their experiences, a process known as learning by doing, without a large amount of labeled data.
+          They actively engage with their surroundings and explore the world through their own interactions.
+          They gradually acquire the abstract concept of objects and develop the ability to generalize problems.
+          Thus, if we understand how a baby's mind develops, we can imitate those learning processes in machines and thereby solve previously unsolved problems such as domain generalization and overcoming the stability-plasticity dilemma.
+          In this workshop, we explore how these learning mechanisms can help us build human-level intelligence in machines.
+        </p>
+
+        <p>
+          In this interdisciplinary workshop, we bring together eminent researchers in Computer Science, Cognitive Science, Psychology, Brain Science, Developmental Robotics and various other related fields to discuss the below questions on babies vs. machines.
+        </p>
+        <ul>
+          <li>How far is the state-of-the-art machine intelligence from babies?</li>
+          <li>How does a baby learn from their own interactions and experiences?</li>
+          <li>What sort of insights can we acquire from the baby's mind?</li>
+          <li>How can those insights help us build smart machines with baby-like intelligence?</li>
+          <li>How can machines learn from babies to do better?</li>
+          <li>How can these machines further contribute to solving the real-world problems?</li>
+        </ul>
+
+        <p>
+          <!--Our workshop will have invited talks, a poster session, and an open panel discussion to exchange ideas.-->
+          We will invite selected experts in the related fields to give insightful talks.
+          We will also encourage interdisciplinary contributions from researchers in the above topics.
+          Hence, we expect this workshop to be a good starting point for participants in various fields to discuss theoretical fundamentals, open problems, and major directions of further development in an exciting new area.
+        </p>
+
+        <div class="col-md-12 nav-custom" id="cfp">
+          <h2>Call for Papers</h2>
+            <p>
+              This workshop will invite researchers in the related fields for poster session in the following topics.
+              Topics of interest include but are not limited to:
+            </p>
+
+            <ul>
+              <li>Neuro-cognitive learning systems</li>
+              <li>Incremental / continual / life-long / never-ending learning</li>
+              <li>Curiosity-driven self-supervised learning</li>
+              <li>Active learning based on a perception-cognition-action cycle</li>
+              <li>Embodied concept learning from real-world interactions</li>
+              <li>Object-centric representation and concept learning</li>
+              <li>Cross-modal / multi-modal concept learning</li>
+              <li>Developmental / cognitive robotics</li>
+              <li>Social and emotional development systems</li>
+              <li>Language development systems</li>
+            </ul>
+        </div>
+
+        <h3>Submission Instructions</h3>
+
+        <p>
+          We invite submissions of papers as <b>extended abstracts within 4 pages</b>, excluding references or supplementary materials.
+          All submissions must be in pdf format as a single file (incl. supplementary materials) using the template below and submitted through below CMT link.
+          The review process is single-round and double-blind.
+          All submissions have to be anonymized.
+        </p>
+
+        <ul>
+          <li>CMT link: <a href="https://cmt3.research.microsoft.com/babymind2020">Conference Management Toolkit</a></li>
+          <li>LaTeX/Word Templates: <a href="https://neurips.cc/Conferences/2020/PaperInformation/StyleFiles">NeurIPS 2020 LaTeX style file</a></li>
+        </ul>
+
+        <p>
+          All accepted papers will be presented as posters during the workshop and listed on the website.
+          Additionally, a small number of accepted papers will be selected to be presented as contributed talks.
+        </p>
+
+        <h3>Dual Submissions</h3>
+        <p>
+          Note that this workshop will not be part of the official proceedings.
+          Accepted submissions will not be counted as publications.
+          However, we discourage submissions of relevant work that has been previously published, or is to be presented at the main conference.
+        </p>
+      </div>
     </div>
 
+    <div class="row featurette">
+      <div class="col-md-12 nav-custom" id="dates">
+        <h2>Important Dates</h2>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <th scope="row">Paper Submission Deadline</th>
+              <td>October 9, 2020<!--&nbsp;&nbsp;<button type="button" class="btn btn-danger">Extended</button--></td>
+            </tr>
+            <tr>
+              <th scope="row">Notification to Authors</th>
+              <td>October 23, 2020</td>
+            </tr>
+            <tr>
+              <th scope="row">Paper Camera-Ready Deadline</th>
+              <td>October 30, 2020</td>
+            </tr>
+            <tr>
+              <th scope="row">Workshop Date</th>
+              <td>December 11, 2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="./assets/js/holder.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+    <div class="row featurette">
+      <div class="col-md-12 nav-custom" id="schedule">
+        <h2>Schedule <!--<h4>Chair: </h4>--> </h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Presentation</th>
+              <!--th scope="col">Presenter</th>-->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">08:40 - 09:00</th>
+              <td>Opening Remarks: <b>BabyMind</b>,
+                  <a href="https://bi.snu.ac.kr/~btzhang/">Byoung-Tak Zhang</a> (Seoul National University)
+                  and <a href="http://garymarcus.com/index.html">Gary Marcus</a> (Robust AI)
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">09:00 - 09:40</th>
+              <td><b><!--Title--></b>
+                  <a href="https://psychology.berkeley.edu/people/celeste-kidd">Celeste Kidd</a> (University of California, Berkeley)
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">09:40 - 10:20</th>
+              <td><b><!--Title--></b>
+                  <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/">Oliver Brock</a> (Technical University of Berlin)
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">10:20 - 10:45</th>
+              <td>Coffee break &amp; Discussions</td>
+            </tr>
+            <tr>
+              <th scope="row">10:45 - 11:30</th>
+              <td>Three Contributed Talks (15 minutes each)
+                  <!--<br>(1) <b>Title (Author)</b>
+                  <br>(2) <b>Title (Author)</b>
+                  <br>(3) <b>Title (Author)</b>-->
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">11:30 - 12:30</th>
+              <td><b>Poster Session</b></td>
+            </tr>
+            <tr>
+              <th scope="row">12:30 - 13:30</th>
+              <td>Lunch Break</td>
+            </tr>
+            <tr>
+              <th scope="row">13:30 - 15:00</th>
+              <td>Six Contributed Talks (15 minutes each)
+                  <!--<br>(1) <b>Title (Author)</b>
+                  <br>(2) <b>Title (Author)</b>
+                  <br>(3) <b>Title (Author)</b>
+                  <br>(4) <b>Title (Author)</b>
+                  <br>(5) <b>Title (Author)</b>
+                  <br>(6) <b>Title (Author)</b>-->
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">15:00 - 15:30</th>
+              <td>Coffee Break &amp; Poster Session</td>
+            </tr>
+            <tr>
+              <th scope="row">15:30 - 16:10</th>
+              <td><b><!--Title--></b>
+                  <a href="https://profiles.stanford.edu/fei-fei-li">Fei-Fei Li</a> (Stanford University)
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">16:10 - 16:50</th>
+              <td><b><!--Title--></b>
+                  <a href="http://web.mit.edu/cocosci/josh.html">Josh Tenenbaum</a> (Massachusetts Institute of Technology)
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">15:50 - 17:30</th>
+              <td><b>Pannel discussions</b>, All invited speakers</td>
+            </tr>
+            <tr>
+              <th scope="row">17:30 - 17:40</th>
+              <td>Closing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-12 nav-custom" id="invited">
+        <h2>Invited Speakers</h2>
 
-<svg xmlns="http://www.w3.org/1600/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs></defs><text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text></svg></body></html>
+        <!-- title, abs 정해지면 주석과 같이 형식 바꿈 -->
+        <!--div>
+          <div style="150px; height=150px; float:left;">
+            <img class="img-circle" src="./assets/images/kidd.jpg" alt="Generic placeholder image" width="160" height="160">
+          </div>
+          <div style="padding-left: 150px;">
+            <font size="4"><a href="">Celeste Kidd</a>, University of California, Berkeley</font><br>
+            <font size="3"><b>Title: </b></font><br>
+            <b>Abstract: </b>
+          </div>
+        </div>
+        <div style="padding-top: 100px;">
+          <div style="150px; height=150px; float:left;">
+            <img class="img-circle" src="./assets/images/brock.jpg" alt="Generic placeholder image" width="160" height="160">
+          </div>
+          <div style="padding-left: 150px;">
+            <font size="4"><a href="">Oliver Brock</a>, Technical University of Berlin</font><br>
+            <font size="3"><b>Title: </b></font><br>
+            <b>Abstract: </b>
+          </div>
+        </div>
+        <div style="padding-top: 100px;">
+          <div style="150px; height=150px; float:left;">
+            <img class="img-circle" src="./assets/images/li.jpg" alt="Generic placeholder image" width="160" height="160">
+          </div>
+          <div style="padding-left: 150px;">
+            <font size="4"><a href="">Fei-Fei Li</a>, Stanford University (TBC)</font><br>
+            <font size="3"><b>Title: </b></font><br>
+            <b>Abstract: </b>
+          </div>
+        </div>
+        <div style="padding-top: 100px;">
+          <div style="150px; height=150px; float:left;">
+            <img class="img-circle" src="./assets/images/tenenbaum.jpg" alt="Generic placeholder image" width="160" height="160">
+          </div>
+          <div style="padding-left: 150px;">
+            <font size="4"><a href="">Josh Tenenbaum</a>, Massachusetts Institute of Technology</font><br>
+            <font size="3"><b>Title: </b></font><br>
+            <b>Abstract: </b>
+          </div>
+        </div-->
+        <br>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/kidd.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="https://psychology.berkeley.edu/people/celeste-kidd">Celeste Kidd<br>University of California, Berkeley</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/brock.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/">Oliver Brock<br>Technical University of Berlin</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/li.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="https://profiles.stanford.edu/fei-fei-li">Fei-Fei Li<br>Stanford University (TBC)</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/tenenbaum.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="http://web.mit.edu/cocosci/josh.html">Josh Tenenbaum<br>Massachusetts Institute of Technology</a></h5>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-12 nav-custom" id="papers">
+        <h2> Accepted Papers </h2>
+      </div>
+    </div>
+    -->
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-12 nav-custom" id="organizers">
+        <h2>Organizing Committee</h2>
+        <br>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/btzhang.png" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="https://cse.snu.ac.kr/professor/%EC%9E%A5%EB%B3%91%ED%83%81">Byoung-Tak Zhang (Co-chair)<br>Seoul National University</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/marcus.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="http://garymarcus.com/index.html">Gary Marcus (Co-chair)<br>Robust AI</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/cangelosi.png" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="https://www.research.manchester.ac.uk/portal/angelo.cangelosi.html">Angelo Cangelosi<br>University of Manchester</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/knoeferle.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="https://amor.cms.hu-berlin.de/~knoeferp/index.html">Pia Knoeferle<br>Humboldt University of Berlin</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/obermayer.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="https://www.ni.tu-berlin.de/menue/members/head_of_research_group/obermayer_klaus/">Klaus Obermayer<br>Technical University of Berlin</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/vernon.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="http://www.vernon.eu/">David Vernon<br>Carnegie Mellon University</a></h5>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="./assets/images/yu.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h5><a href="https://psych.indiana.edu/directory/faculty/yu-chen.html">Chen Yu<br>Indiana University</a></h5>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="col-md-12 nav-custom" id="committee">
+      <h2>Program Committee</h2>
+      <br>
+      <div class="col-lg-4">
+        <img class="img-circle" src="./assets/images/cottrell.jpg" alt="Generic placeholder image" width="160" height="160">
+        <h5><a href="https://cseweb.ucsd.edu/~gary/">Gary Cottrell<br>University of California San Diego (TBC)</a></h5>
+      </div>
+      <div class="col-lg-4">
+        <img class="img-circle" src="./assets/images/forbus.jpg" alt="Generic placeholder image" width="160" height="160">
+        <h5><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/forbus-ken.html">Ken Forbus<br>Northwestern University</a></h5>
+      </div>
+      <div class="col-lg-4">
+        <img class="img-circle" src="./assets/images/langley.jpg" alt="Generic placeholder image" width="160" height="160">
+        <h5><a href="https://scholar.google.co.kr/citations?user=5JcRw-sAAAAJ&hl=ko">Pat Langley<br>Stanford University (TBC)</a></h5>
+      </div>
+      <div class="col-lg-4">
+        <img class="img-circle" src="./assets/images/ritter.jpg" alt="Generic placeholder image" width="160" height="160">
+        <h5><a href="http://www.isle.org/~langley/">Helge Ritter<br>University of Bielefeld</a></h5>
+      </div>
+      <div class="col-lg-4">
+        <img class="img-circle" src="./assets/images/thkim2.jpg" alt="Generic placeholder image" width="160" height="160">
+        <h5><a href="https://bi.snu.ac.kr/~thkim/">Taehyeong Kim<br>Seoul National University</a></h5>
+      </div>
+      <div class="col-lg-4">
+        <img class="img-circle" src="./assets/images/punithan.jpg" alt="Generic placeholder image" width="160" height="160">
+        <h5><a href="https://sites.google.com/site/dharanipunithan/">Dharani Punithan<br>Seoul National University</a></h5>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="col-md-12 nav-custom" id="contacts">
+      <h2>Contact us</h2>
+      <p>
+        For more questions about the workshop and submissions, please email <a href="mailto:babymind.workshop@gmail.com">babymind.workshop@gmail.com</a>
+      </p>
+    </div>
+
+    <hr class="featurette-divider">
+    <footer>
+      <p class="pull-right"><a href="https://babymind-workshop-2020.github.io/index.html">Back to top</a></p>
+      <p>© 2020 <a href="mailto:ijhwang@bi.snu.ac.kr">Injune Hwang</a>, Biointelligence Lab @ Seoul National University </p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="./assets/js/holder.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  <svg xmlns="http://www.w3.org/1600/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs></defs><text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text></svg>
+</body>
+</html>
